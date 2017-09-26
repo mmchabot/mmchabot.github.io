@@ -1,0 +1,33 @@
+body {
+	background:#DB7093;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+h1 {
+	font-size:46px;
+	color:#FFEFD5;
+	text-align:center;
+}
+
+h2 {
+	font-size:30px;
+}
+
+p {
+	font-size:24px;
+}
+
+a {
+	text-decoration:none;
+	color:#FFEFD5;
+}
+
+li {
+	list-style:none;
+	font-size:20px;
+}
+
+.links a {
+	display:block;
+	font-size:24px;
+}
