@@ -53,11 +53,8 @@ h1 {
 	background:#c2f2e3;
 }
 
-img {
-	margin:0 auto;
-	width:460px;
-	padding-left: 150px;
-	padding-right:150px;
+.img-div {
+	text-align:center;
 }
 
 p {
