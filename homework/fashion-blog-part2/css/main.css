@@ -1,0 +1,185 @@
+body {
+	margin:0;
+	background:grey;
+	font-family:'Lato', sans-serif;
+	font-weight:300;
+	line-height:1.5;
+}
+
+.container {
+	width:1200px;
+	margin:0 auto;
+	background:white;
+	padding:50px 90px 0px 90px;
+	overflow:hidden;
+}
+
+/*Header Styles*/
+
+header {
+	overflow:hidden;
+}
+
+header h1 {
+	float:left;
+	width:195px;
+	margin:0;
+	color:#dd0000;
+	font-weight:300;
+	font-size:36px;
+}
+
+header h3 {
+	float:left;
+	width:210px;
+	margin-top:18px;
+	color:#888888;
+	font-weight:300;
+}
+
+/*Top Nav Styles*/
+
+.top-nav {
+	width:1200px;
+	margin-bottom:35px;
+}
+
+.top-nav a{
+	display:inline-block;
+	clear:both;
+	text-decoration:none;
+	background:black;
+	color:white;
+	font-size:20px;
+	text-align:center;
+	width:199px;
+	padding:20px 0;
+	margin-right:-2px;
+}
+
+/*Main and Article Styles*/
+
+main {
+	width:900px;
+	float:left;
+	padding-right:30px;
+}
+
+article {
+	border-bottom:solid 1px #cccccc;
+}
+
+.date {
+	color:#cccccc;
+	font-weight:300;
+	margin:0;
+	font-size:28px;
+}
+
+.title {
+	font-weight:300;
+	margin:10px 0px;
+	font-size:28px;
+}
+
+main img {
+	max-width:900px;
+}
+
+.first-letter {
+	font-size:100px;
+	color:#cccccc;
+}
+
+.article-content {
+	font-size:18px;
+	line-height:30px;
+	padding-top:20px;
+}
+
+.continues-more {
+	color:#dd0000;
+	text-align:right;
+	font-weight:700;
+	margin:0;
+	padding-bottom:25px;
+}
+
+#article-2 {
+	padding-top:60px;
+}
+
+/*Aside Styles*/
+
+aside {
+	width:265px;
+	float:right;
+}
+
+/*About Us Styles*/
+
+.about-us {
+	border-bottom:solid 1px #cccccc;
+	margin-bottom:35px;
+}
+
+.about-us p {
+	font-size:16px;
+}
+
+aside h4 {
+	margin:0;
+	color:#888888;
+	padding-bottom:20px;
+	font-size:18px;
+}
+
+/*Ad Styles*/
+
+.ad {
+	border-bottom:solid 1px #cccccc;
+	padding-bottom:35px;
+}
+
+.ad img {
+	max-width:265px;
+}
+
+/*Popular Posts Styles*/
+
+.popular-posts {
+	padding-top:28px;
+}
+
+ul {
+	list-style:none;
+}
+
+li::before {
+	content: "•"; color:#888888;
+	display: inline-block; width: 1em;
+  	margin-left: -1em
+  	font-size:16px;
+  }
+
+li {
+	color:#dd0000;
+	font-size:16px;
+}
+
+/*Bottom Nav Styles*/
+
+.bottom-nav {
+	padding:55px 0px;
+	clear:both;
+	font-size:18px;
+}
+
+.bottom-nav a{
+	color:#dd0000;
+	text-decoration:none;
+}
+
+span {
+	color:#888888;
+}
