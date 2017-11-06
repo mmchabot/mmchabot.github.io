@@ -1,21 +1,45 @@
+body {
+  background-color:#ebebe0;
+  font-family: 'Raleway', sans-serif;
+}
+
 header {
 	width:100%;
 }
 
 h1 {
-	padding-left:20px;
+	padding:20px;
+  float:left;
+  margin:0;
+  font-family: 'Dawning of a New Day', cursive;
+  font-size:50px;
 }
 
 nav {
+  float:right;
+  padding:20px;
+  margin:0;
+}
 
+ul {
+  margin:0;
+  padding:10px;
 }
 
 li {
-	
+  display:inline;
+  font-family: 'Dawning of a New Day', cursive;
+  font-size:32px;
+  padding:0 40px;
+}
+
+a {
+  text-decoration:none;
+  color:black;
 }
 
 #slideshow {
-
+  clear:both;
 }
 
 #slideshow img {
