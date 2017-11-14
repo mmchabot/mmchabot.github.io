@@ -27,8 +27,18 @@ $('#clickme').click(handleClick);
 
 function handleClick () {
 	var newItem = $('#item').val();
-	appendItem(newItem);
-	$('#item').val('');
+
+	if (newItem.lenth === 0) {
+		alert('You must enter a value!');
+	} else {
+		appendItem(newItem);
+	}
+		$('#item')
+		.focus();
+		.val('');
+}
+
+
 }
 
 function appendItem (listItem) {

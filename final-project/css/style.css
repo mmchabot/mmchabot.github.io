@@ -15,27 +15,38 @@ h1 {
   font-size:50px;
 }
 
-nav {
+.top-nav {
   float:right;
-  padding:20px;
+  padding:30px;
   margin:0;
 }
 
-ul {
-  margin:0;
-  padding:10px;
-}
-
-li {
+.dropdown {
   display:inline;
   font-family: 'Dawning of a New Day', cursive;
   font-size:32px;
   padding:0 40px;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+  display:block;
+}
+
 a {
   text-decoration:none;
   color:black;
+}
+
+a:hover {
+  color:#4b78b3;
 }
 
 #slideshow {
@@ -51,4 +62,15 @@ a {
   top: 0;
   left: 0;
   z-index:-9999;
+}
+
+#wrapper {
+  margin-top:750px;
+  clear:both; 
+}
+
+#map {
+  height: 100%;
+  width:400px;
+  height:400px;
 }
