@@ -50,3 +50,33 @@ article h1 {
 	text-align: center;
 	padding: 5px 0;
 }
+
+/*Styles for screens less than 800px*/
+
+@media screen and (max-width: 800px) {
+
+	.container {
+		width:100%;
+	}
+
+	header h1, header nav {
+		float:none;
+		text-align:center;
+	}
+
+	article {
+		float:none;
+		width:100%;
+		margin-bottom:10px;
+	}
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,7 +1,9 @@
 body {
   background-color:#ebebe0;
-  font-family: 'Raleway', sans-serif;
+  font-family:'Raleway', sans-serif;
 }
+
+/*Header Styles*/
 
 header {
 	width:100%;
@@ -11,41 +13,26 @@ h1 {
 	padding:20px;
   float:left;
   margin:0;
-  font-family: 'Dawning of a New Day', cursive;
+  font-family:'Dawning of a New Day', cursive;
   font-size:50px;
 }
 
 .top-nav {
   float:right;
-  padding:30px;
+  padding:20px;
   margin:0;
+  display:flex;
 }
 
-.dropdown {
+li {
   display:inline;
-  font-family: 'Dawning of a New Day', cursive;
+  font-family:'Dawning of a New Day', cursive;
   font-size:32px;
   padding:0 40px;
+  cursor:pointer;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a{
-  display:block;
-}
-
-a {
-  text-decoration:none;
-  color:black;
-}
-
-a:hover {
+li:hover {
   color:#4b78b3;
 }
 
@@ -54,23 +41,59 @@ a:hover {
 }
 
 #slideshow img {
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index:-9999;
+  width:100%;
+  height:700px;
 }
 
 #wrapper {
   margin-top:750px;
-  clear:both; 
+  clear:both;
+  width:75%;
+  float:left;
 }
 
-#map {
-  height: 100%;
+.topic {
+  clear:both;
+  overflow:hidden;
+  margin:5px 10px;
+}
+
+.topic:hover {
+  background-color:#cdcdb1;
+}
+
+.topic-header {
+  text-align:center;
+  font-size:38px;
+  text-transform:uppercase;
+}
+
+aside {
+  width:23%;
+  float:right;
+  padding:15px;
+  box-sizing: border-box;
+  margin-top:750px;
+  border-left:dotted 2px #4b78b3;
+}
+
+.topic-img {
+  border:solid 5px black;
+  margin:0 20px;
+}
+
+#libation-img {
+  float:right;
+}
+
+#coffee-img, #eats-img {
+  float:left;
+}
+
+#coffee-map, #libations-map, #eats-map {
+  clear:all;
+  height:100%;
   width:400px;
   height:400px;
+  margin:20px;
 }

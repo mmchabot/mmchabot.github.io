@@ -19,6 +19,7 @@ $.ajax({
 	type: 'GET',
   	url: 'http://api.citybik.es/citi-bike-nyc.json',
   	success: function (response) {
+  		console.log(response)
   		response.forEach(handleStation);
 	},
 });

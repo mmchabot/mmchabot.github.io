@@ -104,9 +104,19 @@ p {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 480px) {
+@media (max-width: 620px) {
 	#container {
 		width: 100%;
+	}
+
+	#hero {
+		margin:1%;
+	}
+
+	#articles, .main-article, #side-column {
+		float:none;
+		width:98%;
+		margin:0 1%;
 	}
 }
 
