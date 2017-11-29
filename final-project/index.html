@@ -7,13 +7,13 @@
 </head>
 <body>
 	<header>
-		<h1>Alphabet City</h1>
+		<h1><a href="index.html">Alphabet City</a></h1>
 			<nav class="top-nav">
 				<ul>
-					<li class="list-item" id="about">About</li>
-					<li class="list-item" id="coffee">Coffee</li>
-					<li class="list-item" id="libations">Libations</li>
-					<li class="list-item" id="eats">Eats</li>						
+					<li class="nav-item" id="nav-map">Map</li>
+					<li class="nav-item" id="coffee">Coffee</li>
+					<li class="nav-item" id="libations">Libations</li>
+					<li class="nav-item" id="eats">Eats</li>						
 				</ul> 				
 			</nav>
 	</header>
@@ -25,59 +25,85 @@
 		<img src="img/empellon-copy.jpg" alt="empellon">
 	</div>
 	
-	<div id="wrapper">
-		<div class="topic" id="coffee-topic">
-			<h2 class="topic-header">Coffee</h2>				
+		<div id="wrapper">			
+			<div class="topic" id="coffee-topic">
+				<!-- <h2 class="topic-header">Coffee</h2> -->
 				<img src="img/latte.jpg" class="topic-img" id="coffee-img" alt="latte">
-					<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-		<div class="topic" id="libations-topic">
-			<h2 class="topic-header">Libations</h2>
+
+
+			</div>
+
+			<div class="topic" id="libations-topic">
+				<!-- <h2 class="topic-header">Libations</h2> -->
 				<img src="img/smoked-roasted.jpg" class="topic-img" id="libation-img" alt="smoked and roasted wayland">
-					<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-		<div class="topic" id="eats-topic">
-			<h2 class="topic-header">Eats</h2>
+
+			</div>
+		
+			<div class="topic" id="eats-topic">
+				<!-- <h2 class="topic-header">Eats</h2> -->
 				<img src="img/bakers-pizza.jpg" class="topic-img" id="eats-img" alt="bakers pizza">
-					<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			</div>
+
+			<div class="topic" id="map"></div>
 		</div>
+
+	<div id="container">
+		<div>
+			<div class="list" id="coffee-list">
+				<h3>Best Coffee Spots</h3>
+				<ul class="list-class">
+					<li>Ninth Street Espresso</li>
+					<li>Three Seat Espresso</li>
+					<li>The Roost</li>
+					<li>Ninth Street Espresso at Tompkins Sq Park</li>
+					<li>Ludlow Coffee Supply</li>
+				</ul>
+				<div class="featured">
+					<a href="coffee/index.html">Featured Review</a>
+				</div>
+			</div>
+
+			<div class="list" id="libations-list">
+				<h3>Libations</h3>
+				<ul class="list-class">
+					<li>The Wayland</li>
+					<li>7B</li>
+					<li>Death and Company</li>
+					<li>The Horsebox</li>
+					<li>Drop Off Service</li>
+					<li>Lois</li>
+				</ul>
+				<div class="featured">
+					<a href="libations/index.html">Featured Review</a>
+				</div>
+			</div>
+
+			<div class="list" id="eats-list">
+				<h3>Good Eats</h3>
+				<ul class="list-class">
+					<li>Bakers Pizza</li>
+					<li>Bobwhite</li>
+					<li>Ivan Ramen</li>
+					<li>Barnyard</li>
+					<li>Empellon al Pastor</li>
+				</ul>
+				<div class="featured">
+					<a href="eats/index.html">Featured Review</a>
+				</div>		
+			</div>
+		</div>
+		
+<!-- 		<div id="images">
+			<img src="img/lois.jpg" id="lois">	
+		</div>	 -->
+			
 	</div>
 
-	<aside id="aside">
-			<h3>Some Sidebar Content</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</aside>
-
-	<div id="coffee-map"></div>
-
-	<div id="libations-map"></div>
-
-	<div id="eats-map"></div>
+	<footer>
+		<p>A Molly Chabot 2017 Creation</p>
+	</footer>
 
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <script src="js/carousel.js" type="text/javascript"></script>

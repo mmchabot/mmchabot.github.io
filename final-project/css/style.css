@@ -1,6 +1,7 @@
 body {
   background-color:#ebebe0;
   font-family:'Raleway', sans-serif;
+  margin:0;
 }
 
 /*Header Styles*/
@@ -17,6 +18,15 @@ h1 {
   font-size:50px;
 }
 
+h1 a:hover {
+  color:#4b78b3;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
 .top-nav {
   float:right;
   padding:20px;
@@ -24,7 +34,7 @@ h1 {
   display:flex;
 }
 
-li {
+li.nav-item {
   display:inline;
   font-family:'Dawning of a New Day', cursive;
   font-size:32px;
@@ -32,7 +42,11 @@ li {
   cursor:pointer;
 }
 
-li:hover {
+li.nav-item:hover {
+  color:#4b78b3;
+}
+
+li.nav-item a:hover {
   color:#4b78b3;
 }
 
@@ -48,14 +62,14 @@ li:hover {
 #wrapper {
   margin-top:750px;
   clear:both;
-  width:75%;
-  float:left;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
 }
 
 .topic {
-  clear:both;
-  overflow:hidden;
-  margin:5px 10px;
+  margin:20px;
 }
 
 .topic:hover {
@@ -68,32 +82,94 @@ li:hover {
   text-transform:uppercase;
 }
 
-aside {
-  width:23%;
-  float:right;
-  padding:15px;
-  box-sizing: border-box;
-  margin-top:750px;
-  border-left:dotted 2px #4b78b3;
-}
-
 .topic-img {
   border:solid 5px black;
-  margin:0 20px;
+  height:300px;
+  width:300px;
 }
 
-#libation-img {
-  float:right;
-}
-
-#coffee-img, #eats-img {
-  float:left;
-}
-
-#coffee-map, #libations-map, #eats-map {
-  clear:all;
-  height:100%;
-  width:400px;
-  height:400px;
+#map {
+  width:450px;
+  height:450px;
   margin:20px;
+}
+
+/*List and Review Section Styles*/
+
+#container {
+  margin:20px;
+  width:50%;
+}
+
+.list h3 {
+  font-size:28px;
+}
+
+ul.list-class {
+  padding-left:0;
+}
+
+.list-class li{
+  list-style:none;
+  font-size:18px;
+  padding:2px;
+}
+
+.featured a{
+  color:#4b78b3;
+}
+
+#container {
+  display:flex;
+  margin-top:20px;
+}
+
+/*Footer Styles*/
+
+footer {
+  text-align:center;
+  font-family:'Dawning of a New Day', cursive;
+  font-size:24px;
+  border-top:solid 1px;
+  clear:both;
+  margin-top:10px;
+}
+
+footer p {
+  margin:5px;
+}
+
+/*Other Page Styles*/
+
+.list-item a:hover{
+  color:#4b78b3;
+}
+
+@media screen and (max-width: 1000px) {
+
+  h1 {
+    float:none;
+    text-align:center;
+    width:100%;
+    padding:0;
+  }
+
+  .top-nav {
+    float:none;
+    width:100%;
+  }
+
+  ul {
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+
+  li {
+    display:block;
+    text-align:center;
+    font-family:'Raleway', sans-serif;
+    text-transform:uppercase;
+    padding:5px;
+  }
 }

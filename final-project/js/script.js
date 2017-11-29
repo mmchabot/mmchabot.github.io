@@ -8,27 +8,27 @@
 // });
 
 
-$('#about').click(function() {
+$('#nav-map').click(function() {
     $('html, body').animate({
-        scrollTop: $('#aside').offset().top
+        scrollTop: $('#wrapper').offset().top
     }, 1000);
 });
 
 $('#coffee').click(function() {
     $('html, body').animate({
-        scrollTop: $('#coffee-topic').offset().top
+        scrollTop: $('#coffee-list').offset().top
     }, 1000);
 });
 
 $('#libations').click(function() {
     $('html, body').animate({
-        scrollTop: $('#libations-topic').offset().top
+        scrollTop: $('#libations-list').offset().top
     }, 1000);
 });
 
 $('#eats').click(function() {
     $('html, body').animate({
-        scrollTop: $('#eats-topic').offset().top
+        scrollTop: $('#eats-list').offset().top
     }, 1000);
 });
 
@@ -44,98 +44,146 @@ $(document).ready(function() {
 	});
 });
 
-// Coffee Map //
+// Map //
 
 var map;
+var markersArray = []
 function initMap() {
-	map = new google.maps.Map(document.getElementById('coffee-map'), {
-	center: {lat: 40.7264, lng: -73.9818},
+	map = new google.maps.Map(document.getElementById('map'), {
+	center: {lat: 40.7264, lng: -73.9818},		
 	zoom: 15
 	});
+}
 
-	var marker = new google.maps.Marker({
+initMap ()
+
+// Coffee Markers //
+
+$('#coffee-topic').click(coffeeMarkers)
+
+function coffeeMarkers() {
+
+	map.clearOverlays()	
+
+	var marker1 = new google.maps.Marker({
 		position: {lat: 40.7250288, lng: -73.9799909},
 		map: map,
 		title: 'Ninth Street Espresso'
 	});
 
-	var marker = new google.maps.Marker({
+	var marker2 = new google.maps.Marker({
 		position: {lat: 40.7271033, lng: -73.9830377},
 		map: map,
 		title: 'Three Seat Espresso'
 	});
 
-	var marker = new google.maps.Marker({
+	var marker3 = new google.maps.Marker({
 		position: {lat: 40.7290851, lng: -73.978516},
 		map: map,
 		title: 'The Roost'
 	});
 
-}
-
-initMap ()
-
-// Libations Map //
-
-var libationsMap;
-function initLibationsMap() {
-	libationsMap = new google.maps.Map(document.getElementById('libations-map'), {
-	center: {lat: 40.7264, lng: -73.9818},
-	zoom: 15
+	var marker4 = new google.maps.Marker({
+		position: {lat: 40.7270891, lng: -73.9800874},
+		map: map,
+		title: 'Ninth Street Espresso - Tompkins Sq Park'
 	});
 
-	var marker = new google.maps.Marker({
+	var marker5 = new google.maps.Marker({
+		position: {lat: 40.7216944, lng: -73.9896399},
+		map: map,
+		title: 'Ludlow Coffee Supply'
+	});
+
+	markersArray.push(marker1, marker2, marker3, marker4, marker5)
+}
+
+google.maps.Map.prototype.clearOverlays = function() {
+  for (var i = 0; i < markersArray.length; i++ ) {
+    markersArray[i].setMap(null);
+  }
+  markersArray.length = 0;
+}
+
+// Libations Markers //
+
+$('#libations-topic').click(libationMarkers)
+
+function libationMarkers() {
+
+	map.clearOverlays()
+
+	var marker1 = new google.maps.Marker({
 		position: {lat: 40.7251221, lng: -73.977889},
-		map: libationsMap,
+		map: map,
 		title: 'The Wayland'
 	});
 
-	var marker = new google.maps.Marker({
+	var marker2 = new google.maps.Marker({
 		position: {lat: 40.7250535, lng: -73.9814144},
-		map: libationsMap,
+		map: map,
 		title: '7B'
 	});
 
-	var marker = new google.maps.Marker({
+	var marker3 = new google.maps.Marker({
 		position: {lat: 40.7250575, lng: -73.9836031},
-		map: libationsMap,
+		map: map,
 		title: 'Death & Company'
 	});
 
-}
-
-initLibationsMap ()
-
-// Eats Map //
-
-var eatsMap;
-function initEatsMap() {
-	eatsMap = new google.maps.Map(document.getElementById('eats-map'), {
-	center: {lat: 40.7264, lng: -73.9818},
-	zoom: 15
+	var marker4 = new google.maps.Marker({
+		position: {lat: 40.7300124, lng: -73.9804447},
+		map: map,
+		title: 'The Horsebox'
 	});
 
-	var marker = new google.maps.Marker({
+	var marker5 = new google.maps.Marker({
+		position: {lat: 40.7299749, lng: -73.983115},
+		map: map,
+		title: 'Drop Off Service'
+	});
+
+	var marker6 = new google.maps.Marker({
+		position: {lat: 40.7236962, lng: -73.9810749},
+		map: map,
+		title: 'Lois'
+	});
+
+	markersArray.push(marker1, marker2, marker3, marker4, marker5, marker6)
+}
+
+// // Eats Markers //
+
+$('#eats-topic').click(eatsMarkers)
+
+function eatsMarkers() {
+
+	map.clearOverlays()
+
+	var marker1 = new google.maps.Marker({
 		position: {lat: 40.729436, lng: -73.9834862},
-		map: eatsMap,
+		map: map,
 		title: 'Bakers Pizza'
 	});
 
-	var marker = new google.maps.Marker({
+	var marker2 = new google.maps.Marker({
 		position: {lat: 40.7235935, lng: -73.9789764},
-		map: eatsMap,
+		map: map,
 		title: 'Bobwhite Lunch & Supper Counter'
 	});
 
-	var marker = new google.maps.Marker({
+	var marker3 = new google.maps.Marker({
 		position: {lat: 40.7205657, lng: -73.9852231},
-		map: eatsMap,
+		map: map,
 		title: 'Ivan Ramen'
 	});
 
+	markersArray.push(marker1, marker2, marker3)
+
 }
 
-initEatsMap ()
+
+
 
 
 
