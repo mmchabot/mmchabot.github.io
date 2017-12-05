@@ -1,0 +1,1038 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   /* COLORS =============================================
+   Dark Pink (Magenta): #b21e49;
+   Light Grey: #eeeeee;
+   Bright Pink: #ff1256;
+   Dark Grey: #222222;
+   Blue: #23a4cc;
+   ============================================= */
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color:#eeeeee;
+  font-size:16px;
+}
+
+a {
+  font-weight:700;
+  color:black;
+  text-decoration:none;
+}
+
+p {
+  font-size:1em;
+}
+
+h1, h2, h3, h4 {
+  font-weight:700;
+}
+
+img {
+  width:100%;
+  height:auto;
+}
+
+/*-------------------------Header-------------------------*/
+
+.main-header {
+  width:100%;
+  background-color:#dddddd;
+}
+
+#logo {
+  width:100%;
+  margin:0;
+}
+
+#logo img {
+  width:85%;
+  margin:auto;
+  padding:8%;
+  background-color:black;
+}
+
+nav {
+  width:100%;
+}
+
+nav ul {
+  width:100%;
+  margin:0%;
+  padding:0%;
+}
+
+nav ul li {
+  width:100%;
+  margin:auto;
+  list-style:none;
+  padding:4% 0%;
+  border-bottom:solid 1px #cfcacb;
+  text-align:center;
+}
+
+nav ul li a {
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:1.5em;
+}
+
+nav ul li a:hover {
+  color:#ff1256;
+}
+
+nav i {
+  padding-right: 5px;
+}
+
+/*------------------Main Content/Featured News Story--------------------*/
+
+main {
+    width:96%;
+    padding: 0 2%;
+    margin:auto;
+}
+
+.hero-area {
+  width:100%;
+  clear:both;
+  border-bottom:solid 1px #cfcacb;
+}
+
+.top-story {
+  width:100%;
+}
+
+.top-img {
+  width:100%;
+  height:auto;
+  margin-left:0px;
+}
+
+/*-------------------News & Reviews Detail Pages-------------*/
+
+.detail-hero-area {
+  width:100%;
+  border-bottom: solid 1px #cfcacb;
+}
+
+.top-detail-story {
+  width:100%;
+}
+
+.top-detail-img {
+  width:100%;
+  margin-left:0;
+}
+
+.detail-title ul {
+  padding:0;
+}
+
+.detail-title ul li {
+  list-style: none;
+  display:inline;
+}
+
+.sidebar-detail {
+  width:100%;
+}
+
+.newsletter-detail button {
+  color:#ffffff;
+  background-color:#ff1256;
+}
+
+/*-------------------------Side Bar-------------------------*/
+
+.sidebar {
+  width:100%;
+  padding-bottom:5%;
+  border-bottom:solid 1px #cfcacb;
+}
+
+.newsletter {
+  width:100%;
+}
+
+.newsletter h2 {
+  margin:5px;
+}
+
+.newsletter input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.sidebar-upcoming {
+  display:none;
+}
+
+.sidebar-faq {
+  display:none;
+}
+
+input {
+  text-transform:uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  width:96%;
+  margin:5px;
+  border:solid 1px #cfcacb;
+  line-height: 2.5;
+  height:2.5em;
+}
+
+button {
+  color:#ffffff;
+  background-color:#ff1256;
+  text-transform:uppercase;
+  font-weight: 700;
+  width:96%;
+  margin:5px;
+  border:solid 1px #cfcacb;
+  line-height: 2.5;
+  box-shadow: 2px 2px 0px #cfcacb;
+}
+
+button:hover {
+  background-color: #b21e49;
+}
+
+.sidebar-upcoming button, .sidebar-faq button {
+  color:#ffffff;
+  background-color:#b21e49;
+}
+
+.sidebar-upcoming button:hover, .sidebar-faq button:hover {
+  background-color:#ff1256;
+}
+
+/*-------------------------News Feed-------------------------*/
+
+.feed {
+  width:100%;
+}
+
+.feed-type {
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+.feed-item {
+  width:100%;
+  clear:both;
+  border-bottom:solid 1px #cfcacb;
+  padding-bottom:15px;
+}
+
+.feed-img {
+  width:45%;
+  float:left;
+  clear:both;
+  margin:0;
+  padding-right:3%;
+}
+
+.feed-img img {
+  border:solid 2px #cfcacb;
+}
+
+.feed-info {
+  width:50%;
+  float:right;
+}
+
+.feed-info h2 {
+  margin-top:0px;
+}
+
+.article-detail {
+  display:none;
+}
+
+/*------------------------About Page----------------------------*/
+
+.map-container {
+  position:relative;
+  padding-bottom:75%;
+  height:0;
+  overflow:hidden;
+  border:solid 2px #ccc;
+}
+
+.map-container iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.team {
+  padding-bottom:30%;
+}
+
+.team-member {
+  margin-bottom:5%;
+}
+
+.team-img {
+  width:40%;
+  padding-bottom: 40%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float:left;
+  margin-right:20px;
+  border:2px solid #ccc;
+}
+
+.team-name {
+  margin:0;
+}
+
+.team-title {
+  margin:0;
+}
+
+.team-description {
+  display:none;
+}
+
+#team-img-jack {
+  background-image: url('../img/team-jack.jpg')
+}
+
+#team-img-lana {
+  background-image: url('../img/team-lana.jpg')
+}
+
+#team-img-willow {
+  background-image: url('../img/team-willow.jpg')
+}
+
+/*--------------------------FAQ Page-----------------------------*/
+
+.faq {
+  border-bottom:solid 1px #cfcacb;
+}
+
+.question {
+  font-size:1.5em;
+}
+
+/*------------------------Concerts Page----------------------*/
+
+.concert-hero-area {
+  padding-bottom:20%;
+}
+
+.left-column, .right-column {
+  width:100%;
+}
+
+.concert-block {
+  padding-top:7%;
+  padding-bottom:2%;
+  border-bottom:solid 1px #cfcacb;
+}
+
+.date-block {
+  float:left;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 2px #cfcacb;
+  width:3em;
+  height:3em;
+  margin:0 3% 0 0;
+}
+
+.concert-info {
+  float:left;
+}
+
+.concert-info p {
+  line-height: .5em;
+  margin-top: 0;
+}
+
+.concert-button {
+  margin-left:65px;
+}
+
+.concert-button button {
+  color:#ffffff;
+  background-color:#b21e49;
+  margin-left: 0;
+}
+
+.sidebar-concert {
+  display:none;
+}
+
+/*-------------------------Footer-------------------------*/
+
+footer {
+  width:100%;
+  margin:auto;
+  padding-top:15px;
+  clear:both;
+  border-top:solid 1px #cfcacb;
+}
+
+#footer-logo {
+  width:47.5%;
+  margin:auto;
+}
+
+#footer-logo img {
+  width:80%;
+  margin:auto;
+  padding:8%;
+  background-color:black;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+/*=======================Tablet Styles Here===================================*/
+
+@media (min-width:768px) {
+
+/*-------------------------Header-------------------------*/
+
+.main-header {
+  width:94%;
+  padding: 0 2%;
+  background-color:#dddddd;
+}
+
+#logo {
+  width:40%;
+  float:left;
+}
+
+nav {
+  width:58%;
+  float:right;
+  padding-top:5.5%;
+}
+
+nav ul {
+  text-align:right;
+}
+
+nav ul li {
+  display:inline;
+  border-bottom: none;
+  padding: 4% 2%;
+}
+
+nav ul li a {
+  font-size:1em;
+}
+
+/*------------------Main Content/Featured News Story--------------------*/
+
+.top-img {
+  width:57%;
+  float:left;
+  margin-right:4px;
+  margin-left:0px;
+}
+
+.top-img img {
+  border:solid 2px black;
+}
+
+.top-info {
+  width:37%;
+  float:left;
+  padding-left:3%;
+}
+
+/*-------------------------Side Bar-------------------------*/
+
+.sidebar {
+  clear:both;
+  width:37%;
+  float:right;
+  padding:2% 0% 5% 2%;
+}
+
+.sidebar-upcoming, .sidebar-faq {
+  display:block;
+}
+
+/*-------------------News & Reviews Detail Pages-------------*/
+
+
+.top-detail-img {
+  width:46%;
+  clear:both;
+  float:left;
+}
+
+.top-detail-img img {
+  border:solid 2px black;
+}
+
+.detail-title {
+  width:46%;
+  float:right;
+}
+
+.article-content {
+  clear:both;
+}
+
+.sidebar-detail {
+  width:100%;
+}
+
+.newsletter-detail form {
+  display:inline;
+}
+
+.newsletter-detail input {
+  width:55%;
+  line-height: 2;
+  height:2em;
+}
+
+.newsletter-detail button {
+  width:40%;
+  line-height:0;
+  height:2em;
+}
+
+/*-------------------------News Feed-------------------------*/
+
+.feed {
+  width:60%;
+  float:left;
+  border-right:solid 1px #cfcacb;
+}
+
+.feed-img {
+  width:35%;
+}
+
+.feed-info {
+  padding-right:5%;
+}
+
+/*------------------------About Page----------------------------*/
+
+.contact-section {
+  padding:5% 2%;
+}
+
+.contact {
+  float:left;
+  width:27%;
+  padding-right:3%;
+}
+
+.contact h1 {
+  margin-top:0;
+}
+
+.map-container {
+  padding-bottom:50%;
+  border:solid 2px black;
+}
+
+.mission {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.team-img {
+  width:30%;
+  padding-bottom: 30%;
+}
+
+/*------------------------Concerts Page------------------------*/
+
+.left-column, .right-column {
+  width:40%;
+  margin:0% 5%;
+  float:left;
+}
+
+/*-------------------------Footer-------------------------*/
+
+footer {
+  width:100%;
+  clear:both;
+  padding-top:4%;
+}
+
+#footer-logo {
+  width:30%;
+  margin:auto;
+}
+
+}
+
+/*=======================Desktop Styles Here==================================*/
+
+@media (min-width:940px) {
+
+/*-------------------------Header-------------------------*/
+
+#logo {
+    width:35%;
+    float:left;
+}
+
+nav {
+    width:55%;
+    float:right;
+}
+
+nav ul li {
+  font-size:1.2em;
+}
+
+/*------------------Main Content/Featured News Story--------------------*/
+
+.top-story {
+  width:65%;
+  float:left;
+  padding-top: 10px;
+}
+
+.top-img {
+  width:100%;
+  padding-right:0;
+  margin-left:0;
+}
+
+.top-img img {
+  max-width:620px;
+}
+
+.top-info {
+  width:100%;
+  max-width:620px;
+  float:none;
+  clear:both;
+  padding-left:0;
+}
+
+/*-------------------News & Reviews Detail Pages-------------*/
+
+.top-detail-story {
+  width:65%;
+  float:left;
+  padding-top:10px;
+  padding-right: 1%;
+  border-right:solid 1px #cfcacb;
+}
+
+.top-detail-img {
+  width:100%;
+  max-width: 620px;
+  padding-right: 0;
+  margin-left:0;
+}
+
+.detail-title {
+  width:100%;
+  clear:both;
+  float:left;
+}
+
+.sidebar-detail {
+  width:32%;
+  float:right;
+  clear:none;
+  border-bottom:solid 1px #cfcacb;
+  padding-left:1%;
+  padding-top:2%;
+  padding-bottom:1%;
+  margin-left:0;
+}
+
+.newsletter-detail h2 {
+  margin:1%;
+}
+
+.newsletter-detail form {
+  width:100%;
+}
+
+.newsletter-detail input {
+  display:block;
+  width:100%;
+  margin:0;
+}
+
+.newsletter-detail button {
+  width:100%;
+  margin-top:1%;
+  margin-left:0;
+}
+
+
+
+/*-------------------------Side Bar-------------------------*/
+
+.sidebar {
+  width:32%;
+  float:right;
+  clear:none;
+  border-left:solid 1px #cfcacb;
+  padding-bottom:1%;
+  border-bottom: none;
+}
+
+.newsletter {
+  padding-bottom:3%;
+  border-bottom:solid 1px #cfcacb;
+}
+
+.sidebar-upcoming {
+  padding-bottom:3%;
+  border-bottom:solid 1px #cfcacb;
+}
+
+/*-------------------------News Feed-------------------------*/
+
+.feed {
+  width:100%;
+  float:none;
+  clear:both;
+  border-top:solid 1px #cfcacb;
+  border-right: none;
+  padding-top:2%;
+}
+
+.feed-img {
+  width:20%;
+  float:left;
+}
+
+.feed h2 {
+  margin-top:0;
+}
+
+.feed-info {
+  width:70%;
+  float:right;
+  margin-top:0;
+}
+
+.article-detail {
+  display:block;
+}
+
+/*------------------------About---------------------------*/
+
+.team-img {
+  width:20%;
+  padding-bottom: 20%;
+}
+
+.team-description {
+  display:block;
+}
+
+.map-container {
+  border:solid 2px #ccc;
+}
+
+/*------------------------Concerts Page-------------------------*/
+
+.concert-hero-area {
+  width:68%;
+  float:left;
+}
+
+.left-column {
+  width:45%;
+  padding-right:4%;
+  margin: 0;
+}
+
+.right-column {
+  width:45%;
+  padding-right:4%;
+  margin:0;
+  border-right:solid 1px #cfcacb;
+}
+
+.sidebar-concert {
+  display:block;
+  width:30%;
+  float:right;
+  padding-left:1%;
+  padding-bottom:1%;
+  border-bottom:solid 1px #cfcacb;
+}
+
+/*-------------------------Footer-------------------------*/
+
+#footer-logo {
+  width:20%;
+  margin:auto;
+}
+
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

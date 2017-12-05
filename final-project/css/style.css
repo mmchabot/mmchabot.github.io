@@ -165,7 +165,7 @@ footer p {
     padding:0;
   }
 
-  li {
+  li.nav-item {
     display:block;
     text-align:center;
     font-family:'Raleway', sans-serif;

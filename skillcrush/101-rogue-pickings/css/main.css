@@ -1,0 +1,123 @@
+/***** BASE STYLES *****/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px 20px;
+}
+
+/***** GRID STYLES *****/
+
+.full-width {
+  width: 1200px;
+}
+
+.half-width {
+  width: 600px;
+}
+
+.third-width {
+  width: 400px;
+  height: 190px;
+  text-align: left;
+}
+
+/***** HEADER *****/
+
+#nav {
+  margin: -35px 0px 40px 660px;
+  word-spacing: 18px;
+  font-size: 14px;
+}
+
+header h1 {
+  margin: 35px 0px -40px 0px;
+  font-size: 30px;
+}
+
+header h1 span {
+  color: #77a466;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #77a466;
+}
+
+header img {
+  border-top: 4px solid #77a466;
+  border-bottom: 4px solid #77a466;
+}
+
+header h2 {
+  color: #77a466;
+  font-size: 22px;
+}
+
+header p {
+  font-size: 16px;
+}
+
+/***** MAIN *****/
+
+main .full-width {
+  border-top: 1px solid #dedbdc;
+  border-bottom: 1px solid #dedbdc;
+  margin-top: 5px;
+}
+
+#specials {
+  float: left;
+  margin-left: -40px;
+  border-right: 1px solid #dedbdc;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#specials h2 {
+  text-align: left;
+  margin-left: 40px;
+}
+
+#specials nav ul li {
+  text-decoration: none;
+  color: #77a466;
+  list-style-type: none;
+  line-height: 30px;
+  text-align: left;
+}
+
+#reviews {
+  text-align: left;
+  margin-left: 400px;
+  padding-left: 5px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#contact {
+  margin-top: -209px;
+  margin-left: 850px;
+  padding-top: 10px;
+  padding-left: 25px;
+  border-left: 1px solid #dedbdc;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/***** FOOTER *****/
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  width: 1200px;
+}
+
+footer span {
+  color: #77a466;
+  font-family: 'Dancing Script', cursive;
+}
