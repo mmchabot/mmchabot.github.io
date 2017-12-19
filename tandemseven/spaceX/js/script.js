@@ -12,7 +12,7 @@ function showLaunches (data) {
 	$('#root')
 	.append('<div>Flight number: ' + data.flight_number + '</div>')
 	.append('<div>Launch year: ' + data.launch_year + '</div>')
-	.append('<div>' + '<img src= ' + image + '</>' + '</div>');
+	.append('<img src=' + image + '</>');
 }
 
 showLaunches();
