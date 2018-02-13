@@ -1,6 +1,6 @@
 body {
   background-color:#ebebe0;
-  font-family:'Raleway', sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   margin:0;
 }
 
@@ -8,14 +8,16 @@ body {
 
 header {
 	width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
 	padding:20px;
   float:left;
   margin:0;
-  font-family:'Dawning of a New Day', cursive;
-  font-size:50px;
+  font-size:40px;
 }
 
 h1 a:hover {
@@ -36,8 +38,7 @@ a {
 
 li.nav-item {
   display:inline;
-  font-family:'Dawning of a New Day', cursive;
-  font-size:32px;
+  font-size:24px;
   padding:0 40px;
   cursor:pointer;
 }
@@ -61,19 +62,22 @@ li.nav-item a:hover {
 
 #wrapper {
   margin-top:750px;
-  clear:both;
+}
+
+#topic-wrapper {
   display:flex;
   align-items:center;
   justify-content:center;
   width:100%;
 }
 
-.topic {
-  margin:20px;
+#click {
+  text-align:center;
+  font-size: 28px;
 }
 
-.topic:hover {
-  background-color:#cdcdb1;
+.topic {
+  margin:10px;
 }
 
 .topic-header {
@@ -124,11 +128,29 @@ ul.list-class {
   margin-top:20px;
 }
 
+#coffee-review {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.review-img {
+  display:flex;
+  justify-content:center;
+}
+
+#croissant {
+  border:solid 5px black;
+}
+
+#order {
+  font-weight:700;
+}
+
 /*Footer Styles*/
 
 footer {
   text-align:center;
-  font-family:'Dawning of a New Day', cursive;
   font-size:24px;
   border-top:solid 1px;
   clear:both;
@@ -168,7 +190,6 @@ footer p {
   li.nav-item {
     display:block;
     text-align:center;
-    font-family:'Raleway', sans-serif;
     text-transform:uppercase;
     padding:5px;
   }

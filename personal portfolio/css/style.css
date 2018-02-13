@@ -1,9 +1,38 @@
 body {
 	background-color:#ffe6e6;
+	font-family: 'Spectral SC', serif;
+	color:#333333;
 }
 
-h1 {
-	font-family: 'Spectral SC', serif;
+header {
+	width:98%;
+	display:flex;
+	justify-content:space-between;
+	align-items:baseline;
+	padding:10px;
+}
+
+ul {
+	padding-left:0;
+}
+
+ul li {
 	text-transform: uppercase;
-	text-align:center;
+	display:inline;
+	list-style:none;
+	padding:8px;
+}
+
+.profile {
+	width:98%;
+	padding:10px;
+}
+
+#profile-img {
+	border-radius:100px;
+	border:solid 2px #333333;
+}
+
+p {
+	font-family:'Montserrat', sans-serif;;
 }
