@@ -78,24 +78,18 @@ function coffeeMarkers() {
 	});
 
 	var marker3 = new google.maps.Marker({
-		position: {lat: 40.7290851, lng: -73.978516},
-		map: map,
-		title: 'The Roost'
-	});
-
-	var marker4 = new google.maps.Marker({
 		position: {lat: 40.7270891, lng: -73.9800874},
 		map: map,
 		title: 'Ninth Street Espresso - Tompkins Sq Park'
 	});
 
-	var marker5 = new google.maps.Marker({
+	var marker4 = new google.maps.Marker({
 		position: {lat: 40.7216944, lng: -73.9896399},
 		map: map,
 		title: 'Ludlow Coffee Supply'
 	});
 
-	markersArray.push(marker1, marker2, marker3, marker4, marker5)
+	markersArray.push(marker1, marker2, marker3, marker4)
 }
 
 google.maps.Map.prototype.clearOverlays = function() {
