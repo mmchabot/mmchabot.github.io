@@ -1,0 +1,38 @@
+h1 {
+	color:blue;
+}
+
+main {
+	display:flex;
+	justify-content:center;
+}
+
+.categories {
+	text-align:center;
+}
+
+.categories h2, p, input {
+	margin:5px;
+}
+
+.placements {
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	font-size:18px;
+	text-decoration:underline;
+	font-weight:bold;
+	padding:10px
+}
+
+p {
+	font-size:14px;
+	padding:5px;
+}
+
+button {
+	height:80px;
+	width:80px;
+}
