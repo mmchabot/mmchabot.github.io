@@ -1,0 +1,13 @@
+h1 {
+	color:red;
+	font-size:36px;
+	text-align:center;
+}
+
+.buttons {
+	text-align:center;
+}
+
+ul li {
+	list-style:none;
+}
