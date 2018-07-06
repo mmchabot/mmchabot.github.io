@@ -1,39 +1,20 @@
 var todoList = {
 	todos: [],
-	displayTodos: function() {
-		if (this.todos.length === 0) {
-			console.log('Your todo list is empty!');
-		} else {
-			console.log('My Todo List:');
-			for (var i = 0; i < this.todos.length; i++) {
-				if (this.todos[i].completed === true) {
-					console.log('(x)', this.todos[i].todoText);
-				} else {
-					console.log('( )', this.todos[i].todoText);
-				}
-			};
-		};
-	},
-
 	addTodo: function(todoText) {
 		this.todos.push({
 			todoText: todoText,
 			completed: false
 		});
-		this.displayTodos();
 	},
 	changeTodo: function(position, todoText) {
 		this.todos[position].todoText = todoText;
-		this.displayTodos();
 	},
 	deleteTodo: function(position) {
 		this.todos.splice(position, 1);
-		this.displayTodos();
 	},
 	toggleCompleted: function(position) {
 		var todo = this.todos[position];
 		todo.completed = !todo.completed;
-		this.displayTodos();
 	},
 	toggleAll: function() {
 		var totalTodos = this.todos.length;
@@ -54,9 +35,8 @@ var todoList = {
 			for (var i = 0; i < totalTodos; i++) {
 				this.todos[i].completed = true;
 			} 
-		}
-		this.displayTodos();	
-		}
+		}	
+	}
 };
 
 // Adding event handlers by document.getElementById
@@ -74,13 +54,11 @@ var todoList = {
 //Cleaner JS, adding onclick to HTML//
 
 var handlers = {
-	displayTodos: function() {
-		todoList.displayTodos();
-	},
 	addTodo: function() {
 		var addTodoTextInput = document.getElementById('add-todo-text');
 		todoList.addTodo(addTodoTextInput.value);
 		addTodoTextInput.value = '';
+		view.displayTodos();
 	},
 	changeTodo: function() {
 		var changeTodoPosition = document.getElementById('change-todo-position');
@@ -88,19 +66,23 @@ var handlers = {
 		todoList.changeTodo(changeTodoPosition.valueAsNumber, changeTodoText.value);
 		changeTodoPosition.value = '';
 		changeTodoText.value = '';
+		view.displayTodos();
 	},
 	deleteTodo: function() {
 		var deleteTodoInput = document.getElementById('delete-todo');
 		todoList.deleteTodo(deleteTodoInput.valueAsNumber);
 		deleteTodoInput.value = '';
+		view.displayTodos();
 	},
 	toggleCompleted: function() {
 		var toggleCompletedInput = document.getElementById('completed-todo');
 		todoList.toggleCompleted(toggleCompletedInput.valueAsNumber);
 		toggleCompletedInput.value = '';
+		view.displayTodos();
 	},
 	toggleAll: function() {
 		todoList.toggleAll();
+		view.displayTodos();
 	}
 };
 
