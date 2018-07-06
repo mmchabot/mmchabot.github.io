@@ -1,13 +1,3 @@
-// Nav Bar Animation //
-
-// $('.list-item').click(function() {
-// 	var scrollTo = $(this).attr('')
-//     $('html, body').animate({
-//         scrollTop: $(scrollTo).offset().top
-//     }, 1000);
-// });
-
-
 $('#nav-map').click(function() {
     $('html, body').animate({
         scrollTop: $('#wrapper').offset().top
@@ -175,49 +165,3 @@ function eatsMarkers() {
 	markersArray.push(marker1, marker2, marker3)
 
 }
-
-
-
-
-
-
-
-
-
-
-// Nav Bar Dropdown - Coffee//
-
-// $('#coffee-content').hide();
-
-// $('#coffee').mouseover(function () {
-//     $('#coffee-content').slideDown(700);
-// });
-
-// $('#coffee').mouseleave(function () {
-//     $('#coffee-content').slideUp(700);
-// });
-
-// // Nav Bar Dropdown - Libations //
-
-// $('#libations-content').hide();
-
-// $('#libations').mouseover(function () {
-//     $('#libations-content').slideDown(700);
-// });
-
-// $('#libations').mouseleave(function () {
-//     $('#libations-content').slideUp(700);
-// });
-
-// // Nav Bar Dropdown - Eats //
-
-// $('#eats-content').hide();
-
-// $('#eats').mouseover(function () {
-//     $('#eats-content').slideDown(700);
-// });
-
-// $('#eats').mouseleave(function () {
-//     $('#eats-content').slideUp(700);
-// });
-

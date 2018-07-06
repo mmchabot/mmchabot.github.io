@@ -129,22 +129,22 @@ ul.list-class {
   margin-top:20px;
 }
 
-#coffee-review {
+/*#coffee-review {
   display:flex;
   justify-content:space-between;
   align-items:center;
-}
+}*/
 
 .review-img {
   display:flex;
   justify-content:center;
 }
 
-#croissant {
+/*#croissant {
   border:solid 5px black;
   width:400px;
   height:300px;
-}
+}*/
 
 #order {
   font-weight:700;
